@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivRecipeImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRecipeName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre de la Receta"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/ivRecipeImage"
+        app:layout_constraintTop_toTopOf="@id/ivRecipeImage"
+        app:layout_constraintBottom_toTopOf="@id/tvSomeIngredients"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="8dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSomeIngredients"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre de la Receta"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/ivRecipeImage"
+        app:layout_constraintTop_toBottomOf="@id/tvRecipeName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:maxLines="1"
+        android:layout_marginHorizontal="8dp"
+        android:textColor="@color/black"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
